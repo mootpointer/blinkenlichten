@@ -56,6 +56,7 @@ defmodule Blinkenlichten.Mixfile do
   def deps("host"), do: []
   def deps(target) do
     [{:nerves_runtime, "~> 0.1.0"},
+     {:nerves_interim_wifi, "~> 0.1"},
      {:"nerves_system_#{target}", "~> 0.11.0", runtime: false}]
   end
 

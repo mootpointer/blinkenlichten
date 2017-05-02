@@ -10,3 +10,10 @@ use Mix.Config
 # Uncomment to use target specific configurations
 
 # import_config "#{Mix.Project.config[:target]}.exs"
+
+config :blinkenlichten, :wlan0,
+  ssid: "Optus-4G-E5573-5272",
+  key_mgmt: :"WPA-PSK",
+  psk: "1e6e301n"
+
+config :nerves_interim_wifi, regulatory_domain: "AU"
