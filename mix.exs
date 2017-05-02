@@ -48,7 +48,8 @@ defmodule Blinkenlichten.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   def deps do
-    [{:nerves, "~> 0.5.0", runtime: false}] ++
+    [{:nerves, "~> 0.5.0", runtime: false},
+     {:nerves_firmware_http, github: "nerves-project/nerves_firmware_http"}] ++
     deps(@target)
   end
 
